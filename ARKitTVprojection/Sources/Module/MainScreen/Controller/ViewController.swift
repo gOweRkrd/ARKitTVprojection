@@ -6,9 +6,12 @@ final class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    @IBOutlet private var sceneView: ARSCNView!
     var grids = [Grid]()
     
+    // MARK: - UI Elements
+    
+    @IBOutlet private var sceneView: ARSCNView!
+
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
