@@ -1,12 +1,12 @@
-import UIKit
-import SceneKit
 import ARKit
+import SceneKit
+import UIKit
 
 final class ViewController: UIViewController {
     
     // MARK: - Properties
     
-    @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet private var sceneView: ARSCNView!
     var grids = [Grid]()
     
     // MARK: - Lifecycle
@@ -57,12 +57,12 @@ final class ViewController: UIViewController {
         let tvScreenPlaneNodeGeometry = tvScreenPlaneNode?.geometry as! SCNPlane
         // setup video
         let tvVideoNode = SKVideoNode(fileNamed: "video.mp4")
-        let videoScene = SKScene(size: .init(width: tvScreenPlaneNodeGeometry.width*1000,
-                                             height: tvScreenPlaneNodeGeometry.height*1000))
+        let videoScene = SKScene(size: .init(width: tvScreenPlaneNodeGeometry.width * 1000,
+                                             height: tvScreenPlaneNodeGeometry.height * 1000))
         videoScene.addChild(tvVideoNode)
         
-        tvVideoNode.position = CGPoint(x: videoScene.size.width/2,
-                                       y: videoScene.size.height/2)
+        tvVideoNode.position = CGPoint(x: videoScene.size.width / 2,
+                                       y: videoScene.size.height / 2)
         tvVideoNode.size = videoScene.size
         
         let tvScreenMaterial = tvScreenPlaneNodeGeometry.materials.first(where: { $0.name == "video" })
@@ -92,7 +92,7 @@ final class ViewController: UIViewController {
 
 // MARK: - ARSCNViewDelegate
 
- extension ViewController:ARSCNViewDelegate {
+ extension ViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
