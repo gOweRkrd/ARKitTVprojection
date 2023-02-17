@@ -13,7 +13,7 @@
 		506BDDEB299E397800239C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506BDDEA299E397800239C2F /* Assets.xcassets */; };
 		506BDDEE299E397800239C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506BDDEC299E397800239C2F /* LaunchScreen.storyboard */; };
 		506BDDF5299E39A000239C2F /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BDDF4299E39A000239C2F /* Grid.swift */; };
-		506BDDF9299E39C300239C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506BDDF8299E39C300239C2F /* Main.storyboard */; };
+		50B40871299F66F900EE25B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B40870299F66F900EE25B7 /* Main.storyboard */; };
 		50D375E0299F4D12003171C6 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 50D375DC299F4A3D003171C6 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		506BDDEA299E397800239C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506BDDED299E397800239C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		506BDDF4299E39A000239C2F /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
-		506BDDF8299E39C300239C2F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		50B40870299F66F900EE25B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../Main.storyboard; sourceTree = "<group>"; };
 		50D375DC299F4A3D003171C6 /* video.mp4 */ = {isa = PBXFileReference; explicitFileType = video.quicktime; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,16 +59,80 @@
 		506BDDE0299E397600239C2F /* ARKitTVprojection */ = {
 			isa = PBXGroup;
 			children = (
-				506BDDE1299E397600239C2F /* AppDelegate.swift */,
-				506BDDF4299E39A000239C2F /* Grid.swift */,
-				506BDDE3299E397600239C2F /* art.scnassets */,
-				506BDDE5299E397600239C2F /* ViewController.swift */,
-				506BDDF8299E39C300239C2F /* Main.storyboard */,
-				506BDDEA299E397800239C2F /* Assets.xcassets */,
-				50D375DC299F4A3D003171C6 /* video.mp4 */,
-				506BDDEC299E397800239C2F /* LaunchScreen.storyboard */,
+				506EB878299F65FC00E460F5 /* Sources */,
+				506EB877299F65A900E460F5 /* Resources */,
 			);
 			path = ARKitTVprojection;
+			sourceTree = "<group>";
+		};
+		506EB877299F65A900E460F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				506BDDEC299E397800239C2F /* LaunchScreen.storyboard */,
+				506BDDEA299E397800239C2F /* Assets.xcassets */,
+				50D375DC299F4A3D003171C6 /* video.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		506EB878299F65FC00E460F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				506EB879299F660D00E460F5 /* Module */,
+				506EB87A299F662500E460F5 /* Supporting */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		506EB879299F660D00E460F5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				506EB87C299F664200E460F5 /* MainScreen */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		506EB87A299F662500E460F5 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				506EB87B299F662B00E460F5 /* Application */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		506EB87B299F662B00E460F5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				506BDDE1299E397600239C2F /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		506EB87C299F664200E460F5 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				506EB87D299F664800E460F5 /* View */,
+				506EB87E299F664D00E460F5 /* Controller */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		506EB87D299F664800E460F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50B40870299F66F900EE25B7 /* Main.storyboard */,
+				506BDDE3299E397600239C2F /* art.scnassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		506EB87E299F664D00E460F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				506BDDE5299E397600239C2F /* ViewController.swift */,
+				506BDDF4299E39A000239C2F /* Grid.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				506BDDE4299E397600239C2F /* art.scnassets in Resources */,
+				50B40871299F66F900EE25B7 /* Main.storyboard in Resources */,
 				50D375E0299F4D12003171C6 /* video.mp4 in Resources */,
-				506BDDF9299E39C300239C2F /* Main.storyboard in Resources */,
 				506BDDEE299E397800239C2F /* LaunchScreen.storyboard in Resources */,
 				506BDDEB299E397800239C2F /* Assets.xcassets in Resources */,
 			);
