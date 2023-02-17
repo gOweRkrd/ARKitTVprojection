@@ -13,7 +13,7 @@
 		506BDDEB299E397800239C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506BDDEA299E397800239C2F /* Assets.xcassets */; };
 		506BDDEE299E397800239C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506BDDEC299E397800239C2F /* LaunchScreen.storyboard */; };
 		506BDDF5299E39A000239C2F /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BDDF4299E39A000239C2F /* Grid.swift */; };
-		50B40871299F66F900EE25B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B40870299F66F900EE25B7 /* Main.storyboard */; };
+		50B40877299F7DCC00EE25B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B40875299F7DCC00EE25B7 /* Main.storyboard */; };
 		50D375E0299F4D12003171C6 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 50D375DC299F4A3D003171C6 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		506BDDEA299E397800239C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506BDDED299E397800239C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		506BDDF4299E39A000239C2F /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
-		50B40870299F66F900EE25B7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../Main.storyboard; sourceTree = "<group>"; };
+		50B40876299F7DCC00EE25B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../Downloads/AR_TV-final/NextReality_Tutorial9/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		50D375DC299F4A3D003171C6 /* video.mp4 */ = {isa = PBXFileReference; explicitFileType = video.quicktime; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +120,7 @@
 		506EB87D299F664800E460F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50B40870299F66F900EE25B7 /* Main.storyboard */,
+				50B40875299F7DCC00EE25B7 /* Main.storyboard */,
 				506BDDE3299E397600239C2F /* art.scnassets */,
 			);
 			path = View;
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506BDDE4299E397600239C2F /* art.scnassets in Resources */,
-				50B40871299F66F900EE25B7 /* Main.storyboard in Resources */,
+				50B40877299F7DCC00EE25B7 /* Main.storyboard in Resources */,
 				50D375E0299F4D12003171C6 /* video.mp4 in Resources */,
 				506BDDEE299E397800239C2F /* LaunchScreen.storyboard in Resources */,
 				506BDDEB299E397800239C2F /* Assets.xcassets in Resources */,
@@ -247,6 +247,14 @@
 				506BDDED299E397800239C2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50B40875299F7DCC00EE25B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50B40876299F7DCC00EE25B7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
